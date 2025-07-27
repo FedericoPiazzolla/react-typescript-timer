@@ -14,17 +14,6 @@ Un'app timer semplice sviluppata con **React**, **TypeScript** e la **Context AP
 
 ![Screenshot App](./public/Screenshot%202025-07-27%20alle%2012.57.55.png)
 
-## 📁 Struttura del progetto
-
-src/
-├── components/
-│ ├── TimerForm.tsx
-│ ├── TimerList.tsx
-├── context/
-│ └── TimersContext.tsx
-├── App.tsx
-├── main.tsx
-
 ## 🛠️ Tecnologie utilizzate
 
 - [React](https://react.dev/)
