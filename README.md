@@ -1,69 +1,75 @@
-# React + TypeScript + Vite
+# ⏱️ React TypeScript Timer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un'app timer semplice sviluppata con **React**, **TypeScript** e la **Context API** combinata con `useReducer`. Questo progetto è stato realizzato per esercitarsi con la gestione dello stato in React e l'utilizzo di TypeScript.
 
-Currently, two official plugins are available:
+## 🚀 Funzionalità
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⏰ Aggiungi timer personalizzati con nome e durata
+- ▶️ Avvia e ferma tutti i timer
+- 🧠 Stato centralizzato con `useReducer` + Context API
+- 🔒 Tipizzazione completa grazie a TypeScript
+- 🧱 Struttura del codice chiara e modulare
 
-## Expanding the ESLint configuration
+## 📸 Anteprima
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![Screenshot App](./public/Screenshot%202025-07-27%20alle%2012.57.55.png)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📁 Struttura del progetto
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+src/
+├── components/
+│ ├── TimerForm.tsx
+│ ├── TimerList.tsx
+├── context/
+│ └── TimersContext.tsx
+├── App.tsx
+├── main.tsx
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Tecnologie utilizzate
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- Context API + useReducer
+- Vite
+
+## ▶️ Come avviare il progetto
+
+1. Clona la repository:
+
+```bash
+ git clone https://github.com/FedericoPiazzolla/react-typescript-timer.git
+ cd react-typescript-timer
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Installa le dipendenze:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+3. Avvia il server di sviluppo:
+
+```bash
+npm run dev
+```
+
+## 🎯 Obiettivi didattici
+
+Questo progetto è stato pensato per:
+
+- Migliorare l'uso di **TypeScript** in **React**
+- Comprendere l'utilizzo della **Context API** combinata con `useReducer`
+- Progettare un'app **modulare** e facilmente **scalabile**
+
+---
+
+## 📄 Licenza
+
+Questo progetto è open source e disponibile sotto licenza **MIT**.
+
+---
+
+## 👨‍💻 Autore
+
+Realizzato da **Federico Piazzolla**  
+🔗 [Profilo GitHub](https://github.com/FedericoPiazzolla)
